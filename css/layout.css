@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,900,900i');
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+	font-family: 'Verdana', sans-serif;
+	background: #21232b;
+	font-size: 12px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/* helpers */
+.flex {display: -webkit-box; display: -ms-flexbox; display: flex;}
+.flexWrap {flex-wrap: wrap;}
+.flexRow {-webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row;}
+.flexColumn {-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+.flexAligner {-webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.flexCenter { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+.flexEnd {-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+.flexSpace {-ms-flex-pack: distribute;justify-content: space-around;}
+.flexBetween {-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
+.posRel {position: relative;}
+.posAbs {position: absolute;}
+.center {margin: 0 auto;}
+.txtJust {text-align: left;}
+.txtLeft {text-align: left;}
+.txtCenter {text-align: center;}
+.txtRight {text-align: right;}
+.hidden {display: none;}
+.overflow {overflow: hidden;}
+.marginTop {margin-top: 40px;}
+/* end helpers */
+
+.subname {font-size: 12px; font-weight: 400;}
+.liryc {font-size: 0.9rem;}
+.opacity {opacity: 0.7;}
+.linkSpotify {color:mediumseagreen; font-size:17px; text-decoration:none;}
+.vbox-container{
+  overflow-y: hidden !important;
+}
+#info {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	background:#fcf8e3;
+	border:1px solid  #fbeed5;
+	width:95%;
+	max-width:900px;
+	margin:0 auto 40px auto;
+	font-family:arial;
+	font-size:12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+	#info .info-wrapper {
+		padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+	}
+
+	#info a {
+		color:#c09853;
+		text-decoration:none;
+	}
+
+	#info p {
+		margin:5px 0 0 0;
+	}
+
+
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  padding-top:120px;
+}
+.main-nav{
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+}
+.main-nav-bg{
+  width: 100%;
+  height: 119px;
+  display:block;
+  position: absolute;
+  opacity: 0.95;
+  background-color: #000;
+}
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+  position: relative;
+  z-index: 400;
+}
+#social {
+	list-style:none;
+  position: relative;
+  z-index: 400;
+}
+
+  #social li{
+    margin-left:5px;
+    margin-right:5px;
+  }
+  #social a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 30px;
+  }
+	#filters li span {
+		display: block;
+		padding:5px 20px;
+		text-decoration:none;
+		color:#fff;
+    border:#fff solid 1px;
+		cursor: pointer;
+	}
+
+	#filters li span.active {
+		background: #fff;
+		color:#000;
+	}
+
+
+
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:23%;
+	margin:1%;
+  margin-bottom: 10px;
+	display:none;
+	float:left;
+	overflow:hidden;
+}
+
+.portfolio-wrapper {
+	overflow:hidden;
+	position: relative !important;
+  color: white;
+	cursor:pointer;
+}
+
+.portfolio img {
+	max-width:100%;
+	position: relative;
+	top:0;
+}
+.list-links a{
+  text-decoration: none;
+  color:#111;
+}
+.vbox-content{
+  max-width: 824px;
+  float: none !important;
+  margin: 0 auto
+}
+.dynamic-content{
+	padding: 0px 30px 30px 30px;
+  text-align:center;
+}
+
+#iLightbox .iLightbox-container .iLightbox-close {
+    display: block;
+}
+.main-logo{
+  width: 36vw;
+    max-width: 16rem;
+    margin-top: 12px;
+    position: absolute;
+}
+.portfolio-labels .portfolio-title {
+  font-size: 19px;
+  font-weight: bold;
+}
+.portfolio-labels .portfolio-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px
+}
+.portfolio-labels .portfolio-type {
+  width: 100%;
+  font-size: 12px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.portfolio-tools {
+  flex-wrap: wrap;
+}
+.portfolio-tools .portfolio-tool-item {
+  padding: 3px 7px;
+  background: #4f5156;
+  margin: 5px 7px 0 0;
+  font-size: 11px;
+  border-radius: 10px;
+}
+.portfolio-tools.light .portfolio-tool-item {
+  padding: 3px 7px;
+  background: #e5e6e8;
+  margin: 0 7px 5px 0;
+  font-size: 11px;
+  border-radius: 10px;
+}
+.preview-images {
+  width:100%;
+  height: auto;
+}
+.preview-images img {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px;
+	}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container {
+		width: 95%;
+	}
+  #filters li span {
+		padding:5px 5px;
+	}
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+    margin-bottom: 25px;
+	}
+
+	#ads {
+		display:none;
+	}
+
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+
+	#ads {
+		display:none;
+	}
+
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.divider {
+  max-width: 350px;
+  height: 1px;
+  margin: 20px auto;
+  background-color: rgba(0,0,0,0.2);
+}

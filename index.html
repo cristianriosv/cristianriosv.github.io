@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="description" content="Cristian Rios // Portfolio">
+	<meta name="keywords" content="">
+	<meta name="author" content="Cristian Rios">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/icons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/icons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16">
+
+	<title>Portfolio - Cristian Rios</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css?v=2">
+	<link rel="stylesheet" href="css/venobox.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script src="js/venobox.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/main.min.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', '251193939', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div class="main-nav">
+		<div class="main-nav-bg"></div>
+		<img class="main-logo" src="img/logo.svg" alt="" />
+		<ul id="social" class="flex flexCenter clearfix">
+			<li><a href="mailTo:cristianriosv@gmail.com"><i class="fab far fa-envelope"></i></a></li>
+			<li><a href="https://www.instagram.com/cristianriosv/" target="_blank"><i class="fab fa-instagram" style="color:lightpink"></i></a></li>
+			<li><a href="https://open.spotify.com/album/4oDGbmxNdNDjfq4iJ1sNFa"><i class="fab fa-spotify" style="color:lawngreen"></i></a></li>
+		</ul>
+		<ul id="filters" class="flex flexCenter clearfix">
+			<li><span class="filter active track" data-filter=".all" data-track="filterAll">All</span></li>
+			<li><span class="filter track" data-filter=".online" data-track="filterOnline">Online</span></li>
+			<li><span class="filter track" data-filter=".mobile" data-track="filterMobile">Mobile</span></li>
+			<li><span class="filter track" data-filter=".design" data-track="filterDesign">Design</span></li>
+			<li><span class="filter track" data-filter=".reactjs, .angularjs" data-track="filterJS">ReactJS/AngularJS</span></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div id="portfoliolist" class="flex flexWrap">
+		</div>
+	</div>
+</body>
+</html>
